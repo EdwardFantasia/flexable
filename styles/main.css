@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+.container {
+    background: pink;
+    height: 50vh;
+    width: 90vh;
+    padding: .5em;
+    margin: 25vh auto 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.item {
+    background: lightblue;
+    margin: .5em;
+}
+
+.one{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    /* could also do flex: 1 1 250px;*/
+}
+
+.two{
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: 250px;
+    order: -1;
+}
+
+.three{
+    flex-grow: 3;
+    flex-shrink: 3;
+    flex-basis: 250px;
+}
